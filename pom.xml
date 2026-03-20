@@ -9,6 +9,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>jwt-auth-demo</name>
     <description>Spring Boot JWT authentication (in-memory)</description>
+    <packaging>jar</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -69,6 +70,8 @@
     </dependencies>
 
     <build>
+        <!-- Produce a stable jar name: target/jwt-auth-demo.jar -->
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -92,6 +95,14 @@
                 <configuration>
                     <mainClass>com.example.jwtauthdemo.JwtAuthDemoApplication</mainClass>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>repackage</id>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

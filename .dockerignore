@@ -1,0 +1,17 @@
+# VCS
+.git
+.gitignore
+
+# Node/frontend (not used for backend build)
+node_modules
+frontend
+
+# Build outputs
+target/*
+!target/*.jar
+
+# IDE / local tooling
+.idea
+.vscode
+.cursor
+

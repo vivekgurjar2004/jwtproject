@@ -1,0 +1,5 @@
+# Maven build output
+target/
+
+# Keep the runnable application jar visible in git (only unignore jars).
+!target/*.jar
