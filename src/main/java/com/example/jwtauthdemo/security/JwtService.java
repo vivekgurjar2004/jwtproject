@@ -57,7 +57,8 @@ public class JwtService {
     }
 
     private Claims parseAllClaims(String token) {
-        return Jwts.parserBuilder()
+        // Use the API form that's compatible with the jjwt version on the classpath.
+        return Jwts.parser()
                 .setSigningKey(signingKey())
                 .build()
                 .parseClaimsJws(token)

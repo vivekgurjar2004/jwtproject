@@ -1,0 +1,14 @@
+com\example\jwtauthdemo\api\RegisterRequest.class
+com\example\jwtauthdemo\controller\ProfileController.class
+com\example\jwtauthdemo\api\ProfileResponse.class
+com\example\jwtauthdemo\security\JwtProperties.class
+com\example\jwtauthdemo\api\LoginRequest.class
+com\example\jwtauthdemo\service\InMemoryUserStore.class
+com\example\jwtauthdemo\model\AppUser.class
+com\example\jwtauthdemo\security\JwtService.class
+com\example\jwtauthdemo\api\AuthResponse.class
+com\example\jwtauthdemo\JwtAuthDemoApplication.class
+com\example\jwtauthdemo\security\JwtAuthenticationFilter.class
+com\example\jwtauthdemo\controller\AuthController.class
+com\example\jwtauthdemo\security\SecurityConfig.class
+com\example\jwtauthdemo\api\RestExceptionHandler.class

@@ -21,6 +21,11 @@ public class AppUser implements UserDetails {
     private Set<String> roles;
 
     @Override
+    public String getPassword() {
+        return passwordHash;
+    }
+
+    @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         // Store roles like "USER", "ADMIN" and convert to "ROLE_USER" authorities.
         return roles.stream()

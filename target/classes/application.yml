@@ -1,0 +1,8 @@
+jwt:
+  # Demo secret. Replace with a long random secret in real apps.
+  secret: "r3place-with-a-long-random-secret-key-32bytes-minimum!!"
+  expirationMs: 3600000
+
+server:
+  port: 8080
+
